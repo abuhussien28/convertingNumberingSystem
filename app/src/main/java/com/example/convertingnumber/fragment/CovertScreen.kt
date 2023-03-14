@@ -14,13 +14,14 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.convertingnumber.*
+import com.google.android.material.button.MaterialButton
 
 class CovertScreen : Fragment() {
     lateinit var editTextDecimal: EditText
     lateinit var editTextBinary: EditText
     lateinit var editTextOctal: EditText
     lateinit var editTextHex: EditText
-    lateinit var clear:ImageButton
+    private lateinit var clear: MaterialButton
     lateinit var onFocusChangeListener: View.OnFocusChangeListener
 
     override fun onCreateView(
@@ -45,7 +46,7 @@ class CovertScreen : Fragment() {
         editTextBinary = view.findViewById(R.id.binaryNumberEditText)
         editTextHex = view.findViewById(R.id.hexadecimalNumberEditText)
         editTextOctal = view.findViewById(R.id.octalNumberEditText)
-        clear=view.findViewById(R.id.clearButton)
+        clear=view.findViewById(R.id.buttonClear)
     }
     private fun addListener(){
     editTextDecimal.addTextChangedListener(object : TextWatcher {
