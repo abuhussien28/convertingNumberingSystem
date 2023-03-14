@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.OperationScreen">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="199dp"
+        android:layout_height="132dp"
+android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/image"
+        tools:layout_editor_absoluteY="16dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numOneEditText"
+        android:hint="number one"
+        style="@style/TextFieldRoundInput"
+        android:drawableLeft="@drawable/drawable_start_binary"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/add"
+            android:layout_weight="1"
+            android:src="@drawable/add" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/subtract"
+            android:src="@drawable/subtract" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/multiply"
+            android:layout_weight="1"
+            android:src="@drawable/multiply" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/divide"
+            android:layout_weight="1"
+            android:src="@drawable/divide" />
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextFieldRoundInput"
+        android:id="@+id/numTwoEditText"
+        android:hint="number two"
+        android:drawableLeft="@drawable/drawable_start_binary"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#24945C"
+        android:id="@+id/result"
+        android:gravity="center"
+        android:layout_gravity="center"
+        style="@style/textViewResult"
+        />
+
+    <ImageView
+        android:id="@+id/clear"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/clear" />
+</LinearLayout>
