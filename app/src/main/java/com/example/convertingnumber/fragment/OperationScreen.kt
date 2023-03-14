@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.convertingnumber.R
+import com.google.android.material.button.MaterialButton
 
 
 class OperationScreen : Fragment() {
@@ -21,7 +22,7 @@ private lateinit var addIcon:ImageView
 private lateinit var subtractIcon:ImageView
 private lateinit var multiplyIcon:ImageView
 private lateinit var divideIcon:ImageView
-private lateinit var clear: ImageView
+private lateinit var clear: MaterialButton
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
@@ -40,7 +41,7 @@ addIcon=view.findViewById(R.id.add)
 subtractIcon=view.findViewById(R.id.subtract)
 multiplyIcon=view.findViewById(R.id.multiply)
 divideIcon=view.findViewById(R.id.divide)
-          clear=view.findViewById(R.id.clear)
+          clear=view.findViewById(R.id.buttonClear)
     }
 
     fun operationFormula(operator: String) {
